@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Conta | Minha Conta</title>
+
+  <!-- Fonts (mesmas do projeto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card auth-card--wide" aria-labelledby="signup-title">
+      <header class="auth-header">
+        <h1 id="signup-title">Criar conta</h1>
+        <p>Preencha seus dados para concluir o cadastro.</p>
+      </header>
+
+      <form class="auth-form" action="#" method="post">
+        <fieldset class="auth-fieldset">
+          <legend class="auth-legend">Dados pessoais</legend>
+
+          <div class="form__group">
+            <label class="form__label" for="fullName">Nome completo</label>
+            <input
+              class="form__input"
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="name"
+              required />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="cpf">CPF</label>
+            <input
+              class="form__input"
+              type="text"
+              id="cpf"
+              name="cpf"
+              inputmode="numeric"
+              pattern="[0-9]{11}"
+              placeholder="Somente números"
+              required />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="birthDate">Data de nascimento</label>
+            <input
+              class="form__input"
+              type="date"
+              id="birthDate"
+              name="birthDate"
+              required />
+          </div>
+        </fieldset>
+
+        <fieldset class="auth-fieldset">
+          <legend class="auth-legend">Contato</legend>
+
+          <div class="form__group">
+            <label class="form__label" for="email">E-mail</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="phone">Telefone</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              inputmode="tel"
+              placeholder="(xx) xxxxx-xxxx"
+              required />
+          </div>
+        </fieldset>
+
+        <fieldset class="auth-fieldset">
+          <legend class="auth-legend">Endereço completo</legend>
+
+          <div class="auth-grid">
+            <div class="form__group">
+              <label class="form__label" for="cep">CEP</label>
+              <input
+                class="form__input"
+                type="text"
+                id="cep"
+                name="cep"
+                inputmode="numeric"
+                pattern="[0-9]{8}"
+                placeholder="Somente números"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="street">Rua</label>
+              <input
+                class="form__input"
+                type="text"
+                id="street"
+                name="street"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="number">Número</label>
+              <input
+                class="form__input"
+                type="text"
+                id="number"
+                name="number"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="complement">Complemento</label>
+              <input
+                class="form__input"
+                type="text"
+                id="complement"
+                name="complement" />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="district">Bairro</label>
+              <input
+                class="form__input"
+                type="text"
+                id="district"
+                name="district"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="city">Cidade</label>
+              <input
+                class="form__input"
+                type="text"
+                id="city"
+                name="city"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="state">Estado</label>
+              <input
+                class="form__input"
+                type="text"
+                id="state"
+                name="state"
+                required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="auth-fieldset">
+          <legend class="auth-legend">Acesso</legend>
+
+          <div class="form__group">
+            <label class="form__label" for="username">Username</label>
+            <input
+              class="form__input"
+              type="text"
+              id="username"
+              name="username"
+              autocomplete="username"
+              required />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="password">Senha</label>
+            <input
+              class="form__input"
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="new-password"
+              required />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="confirmPassword">Confirmar senha</label>
+            <input
+              class="form__input"
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              autocomplete="new-password"
+              required />
+          </div>
+
+          <div class="form__checkbox">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required />
+            <label class="form__checkbox-label" for="terms">
+              Li e aceito os termos de privacidade (LGPD)
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="btn btn-primary auth-submit" type="submit">Criar conta</button>
+
+        <div class="auth-links">
+          <a href="login.html" class="auth-link">Já tenho uma conta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Fale com a TechShop. Tire dúvidas, envie sugestões e conheça nossos canais oficiais." />
+    <meta name="keywords" content="contato, suporte, atendimento, techshop" />
+    <meta name="author" content="E-commerce" />
+
+    <title>TechShop - Contato</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="index.html" class="header__logo">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="currentColor" />
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>TechShop</span>
+            </a>
+
+            <!-- Menu Toggle (Mobile) -->
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="index.html" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="products.html" class="header__menu-link">Produtos</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Ofertas</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link active">Contato</a>
+                    <li class="header__menu-item">
+                        <a href="about.html" class="header__menu-link">Sobre Nós</a>
+                    </li>
+                </ul>
+
+                <!-- Actions -->
+                <div class="header__actions">
+                 	<a href="login.html">
+						<button class="header__icon-btn" data-login-btn aria-label="Login">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round">
+								<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+								<circle cx="12" cy="7" r="4"></circle>
+							</svg>
+						</button>
+					</a>
+                    <button class="header__icon-btn" data-cart-btn aria-label="Carrinho">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="header__cart-badge">0</span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Overlay for mobile menu -->
+            <div class="header__overlay"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="contact-hero">
+            <div class="container contact-hero__content">
+                <h1 class="contact-hero__title">Fale com a TechShop</h1>
+                <p class="contact-hero__text">
+                    Tem dúvidas, sugestões ou precisa de ajuda? Estamos aqui para ouvir você.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <article class="contact-card">
+                    <h2 class="contact-card__title">Envie uma mensagem</h2>
+                    <p class="contact-card__text">
+                        Responderemos em até 1 dia útil.
+                    </p>
+
+                    <form class="contact-form" data-validate id="contactForm">
+                        <div class="form__group">
+                            <label for="contact-name" class="form__label form__label--required">
+                                Nome
+                            </label>
+                            <input type="text" id="contact-name" name="name" class="form__input" placeholder="Seu nome"
+                                required />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contact-email" class="form__label form__label--required">
+                                E-mail
+                            </label>
+                            <input type="email" id="contact-email" name="email" class="form__input"
+                                placeholder="voce@exemplo.com" required />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contact-subject" class="form__label form__label--required">
+                                Assunto
+                            </label>
+                            <input type="text" id="contact-subject" name="subject" class="form__input"
+                                placeholder="Ex: Dúvida sobre entrega" required />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contact-message" class="form__label form__label--required">
+                                Mensagem
+                            </label>
+                            <textarea id="contact-message" name="message" class="form__textarea" rows="5"
+                                placeholder="Escreva sua mensagem..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </article>
+
+                <aside class="contact-info">
+                    <div class="contact-info__block">
+                        <h3 class="contact-info__title">Telefone</h3>
+                        <p class="contact-info__text">(11) 4000-1234</p>
+                    </div>
+                    <div class="contact-info__block">
+                        <h3 class="contact-info__title">Endereço</h3>
+                        <p class="contact-info__text">
+                            Rua das Inovações, 123<br />
+                            São Paulo - SP
+                        </p>
+                    </div>
+                    <div class="contact-info__block">
+                        <h3 class="contact-info__title">Horário</h3>
+                        <p class="contact-info__text">
+                            Seg a Sex: 9h às 18h<br />
+                            Sáb: 9h às 13h
+                        </p>
+                    </div>
+                    <div class="contact-map">
+                        <iframe title="Mapa com localização da TechShop"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9322398089716!2d-46.6559816!3d-23.5744439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7fb6b293f%3A0x3a58c6952b5b3a25!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__grid">
+				<!-- About -->
+				<div class="footer__column">
+					<div class="footer__logo">TechShop</div>
+					<p class="footer__about">
+						Sua loja online de tecnologia com os melhores produtos e as
+						melhores ofertas.
+					</p>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link" aria-label="Facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+							</svg>
+						</a>
+						<a href="#" class="footer__social-link" aria-label="Instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round">
+								<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+								<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+								<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+							</svg>
+						</a>
+						<a href="#" class="footer__social-link" aria-label="Twitter">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- Links -->
+				<div class="footer__column">
+					<h4 class="footer__column-title">Links Rápidos</h4>
+					<ul class="footer__links">
+						<li>
+							<a href="index.html" class="footer__link">Home</a>
+						</li>
+						<li>
+							<a href="products.html" class="footer__link">Produtos</a>
+						</li>
+						<li>
+							<a href="#ofertas" class="footer__link">Ofertas</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Sobre Nós</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Help -->
+				<div class="footer__column">
+					<h4 class="footer__column-title">Ajuda</h4>
+					<ul class="footer__links">
+						<li>
+							<a href="#" class="footer__link">FAQ</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Envio e Entrega</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Política de Devolução</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Rastreamento</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Newsletter -->
+				<div class="footer__column">
+					<h4 class="footer__column-title">Newsletter</h4>
+					<p class="footer__about">Receba ofertas exclusivas no seu e-mail</p>
+					<form class="footer__newsletter-form" data-validate id="newsletterForm" novalidate>
+						<div class="footer__newsletter-field">
+							<label for="newsletter-email" class="footer__newsletter-label">
+								Seu e-mail
+							</label>
+							<input type="email" name="email" id="newsletter-email" class="footer__newsletter-input"
+								placeholder="voce@exemplo.com" autocomplete="email" required />
+						</div>
+
+						<label class="footer__newsletter-consent">
+							<input type="checkbox" name="privacy" id="newsletter-privacy" required />
+							<span>Concordo com a política de privacidade.</span>
+						</label>
+
+						<button type="submit" class="footer__newsletter-btn">
+							Inscrever
+						</button>
+
+						<p class="footer__newsletter-message hidden" role="status" aria-live="polite"></p>
+					</form>
+
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="footer__bottom">
+				<p class="footer__copyright">
+					&copy; 2026 TechShop. Todos os direitos reservados.
+				</p>
+				<div class="footer__payment-methods">
+					<span style="color: var(--color-gray-400); font-size: var(--text-sm)">Aceitamos:</span>
+					<div class="footer__payment-icon">💳</div>
+					<div class="footer__payment-icon">🏦</div>
+					<div class="footer__payment-icon">📱</div>
+				</div>
+			</div>
+		</div>
+	</footer>

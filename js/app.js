@@ -37,3 +37,27 @@ if (document.readyState === "loading") {
 } else {
 	init();
 }
+
+function initNewsletterFeedback() {
+	const form = document.getElementById("newsletterForm");
+	if (!form) return;
+
+	const message = form.querySelector(".footer__newsletter-message");
+
+	form.addEventListener("submit", (event) => {
+		event.preventDefault();
+
+		if (!form.checkValidity()) {
+			message.textContent =
+				"Preencha o e-mail corretamente e aceite a política de privacidade.";
+			message.classList.remove("hidden");
+			message.dataset.state = "error";
+			return;
+		}
+
+		message.textContent = "Inscrição realizada! Em breve você receberá novidades.";
+		message.classList.remove("hidden");
+		message.dataset.state = "success";
+		form.reset();
+	});
+}

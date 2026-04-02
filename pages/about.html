@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça a história da TechShop, nossa missão e a equipe por trás da loja." />
+    <meta name="keywords" content="sobre nós, empresa, equipe, história, techshop" />
+    <meta name="author" content="E-commerce" />
+
+    <title>TechShop - Sobre Nós</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="index.html" class="header__logo">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="currentColor" />
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>TechShop</span>
+            </a>
+
+            <!-- Menu Toggle (Mobile) -->
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="index.html" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="products.html" class="header__menu-link">Produtos</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Ofertas</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="contact.html" class="header__menu-link">Contato</a>
+                    <li class="header__menu-item">
+                        <a href="index.html" class="header__menu-link active">Sobre Nós</a>
+                    </li>
+                </ul>
+
+                <!-- Actions -->
+                	<a href="login.html">
+						<button class="header__icon-btn" data-login-btn aria-label="Login">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round">
+								<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+								<circle cx="12" cy="7" r="4"></circle>
+							</svg>
+						</button>
+					</a>
+                    <button class="header__icon-btn" data-cart-btn aria-label="Carrinho">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="header__cart-badge">0</span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Overlay for mobile menu -->
+            <div class="header__overlay"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="about-hero">
+            <div class="container about-hero__grid">
+                <div class="about-hero__content">
+                    <h1 class="about-hero__title">Sobre a TechShop</h1>
+                    <p class="about-hero__text">
+                        Desde 2016, conectamos pessoas a tecnologia de qualidade com
+                        preços justos, atendimento humano e entrega rápida.
+                    </p>
+                    <p class="about-hero__text">
+                        Somos apaixonados por inovação e acreditamos que a melhor experiência
+                        de compra acontece quando confiança e simplicidade caminham juntas.
+                    </p>
+                </div>
+                <aside class="about-hero__image" aria-label="Equipe TechShop">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=80"
+                        alt="Equipe TechShop em reunião de trabalho" class="about-hero__img" />
+                </aside>
+            </div>
+        </section>
+
+        <section class="about-values">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="section__title">Missão, Visão e Valores</h2>
+                    <p class="section__description">
+                        Nossos pilares guiam cada decisão, do catálogo ao atendimento.
+                    </p>
+                </header>
+
+                <div class="about-values__grid">
+                    <article class="about-card">
+                        <h3 class="about-card__title">Missão</h3>
+                        <p class="about-card__text">
+                            Facilitar o acesso à tecnologia com segurança, velocidade e
+                            excelência no atendimento.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <h3 class="about-card__title">Visão</h3>
+                        <p class="about-card__text">
+                            Ser a principal referência brasileira em e‑commerce de tecnologia
+                            até 2030.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <h3 class="about-card__title">Valores</h3>
+                        <p class="about-card__text">
+                            Transparência, foco no cliente, inovação contínua e respeito às
+                            pessoas.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-team">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="section__title">Nosso Time</h2>
+                    <p class="section__description">
+                        Profissionais apaixonados por tecnologia e atendimento.
+                    </p>
+                </header>
+
+                <div class="team-grid">
+                    <figure class="team-card">
+                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&q=80"
+                            alt="Ana Souza, líder de operações" class="team-card__img" />
+                        <figcaption class="team-card__info">
+                            <strong>Ana Souza</strong>
+                            <span>Líder de Operações</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="team-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+                            alt="Carlos Lima, especialista em suporte" class="team-card__img" />
+                        <figcaption class="team-card__info">
+                            <strong>Carlos Lima</strong>
+                            <span>Especialista em Suporte</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="team-card">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80"
+                            alt="Marina Costa, curadoria de produtos" class="team-card__img" />
+                        <figcaption class="team-card__info">
+                            <strong>Marina Costa</strong>
+                            <span>Curadoria de Produtos</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="team-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+                            alt="Rafael Martins, tecnologia e inovação" class="team-card__img" />
+                        <figcaption class="team-card__info">
+                            <strong>Rafael Martins</strong>
+                            <span>Tecnologia e Inovação</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-timeline" aria-labelledby="timeline-title">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="section__title" id="timeline-title">
+                        Nossa História
+                    </h2>
+                    <p class="section__description">
+                        Um caminho construído com foco no cliente e inovação contínua.
+                    </p>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <article class="timeline__content">
+                            <time class="timeline__year" datetime="2016">
+                                2016
+                            </time>
+                            <h3 class="timeline__title">Fundação</h3>
+                            <p class="timeline__text">
+                                A TechShop nasce com um catálogo enxuto e atendimento
+                                totalmente personalizado.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="timeline__item">
+                        <article class="timeline__content">
+                            <time class="timeline__year" datetime="2019">
+                                2019
+                            </time>
+                            <h3 class="timeline__title">Expansão Nacional</h3>
+                            <p class="timeline__text">
+                                Ampliamos nossa operação e passamos a entregar em todo o Brasil.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="timeline__item">
+                        <article class="timeline__content">
+                            <time class="timeline__year" datetime="2022">
+                                2022
+                            </time>
+                            <h3 class="timeline__title">Nova Plataforma</h3>
+                            <p class="timeline__text">
+                                Migramos para uma experiência digital mais rápida e segura.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="timeline__item">
+                        <article class="timeline__content">
+                            <time class="timeline__year" datetime="2026">
+                                2026
+                            </time>
+                            <h3 class="timeline__title">Foco em Comunidade</h3>
+                            <p class="timeline__text">
+                                Lançamos iniciativas de conteúdo e suporte técnico para clientes.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="about-social">
+            <div class="container">
+                <article class="about-social__card">
+                    <h2 class="about-social__title">Conecte-se com a gente</h2>
+                    <p class="about-social__text">
+                        Acompanhe novidades, promoções e bastidores nas nossas redes sociais.
+                    </p>
+                    <div class="about-social__links">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="about-social__link">
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="about-social__link">
+                            Facebook
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="about-social__link">
+                            LinkedIn
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <!-- About -->
+                <div class="footer__column">
+                    <div class="footer__logo">TechShop</div>
+                    <p class="footer__about">
+                        Sua loja online de tecnologia com os melhores produtos e as
+                        melhores ofertas.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Links Rápidos</h4>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="footer__link">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="#ofertas" class="footer__link">Ofertas</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">Sobre Nós</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Ajuda</h4>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Envio e Entrega</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Política de Devolução</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Rastreamento</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Newsletter</h4>
+                    <p class="footer__about">Receba ofertas exclusivas no seu e-mail</p>
+                    <form class="footer__newsletter-form" data-validate id="newsletterForm">
+                        <input type="email" name="email" class="footer__newsletter-input" placeholder="Seu e-mail"
+                            required />
+                        <button type="submit" class="footer__newsletter-btn">
+                            Inscrever
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 TechShop. Todos os direitos reservados.
+                </p>
+                <div class="footer__payment-methods">
+                    <span style="color: var(--color-gray-400); font-size: var(--text-sm)">Aceitamos:</span>
+                    <div class="footer__payment-icon">💳</div>
+                    <div class="footer__payment-icon">🏦</div>
+                    <div class="footer__payment-icon">📱</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modules/navigation.js"></script>
+</body>
+
+</html>
