@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar | Minha Conta</title>
+
+  <!-- Fonts (mesmas do restante do projeto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS principal do projeto -->
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card" aria-labelledby="login-title">
+      <header class="auth-header">
+        <h1 id="login-title">Entrar</h1>
+        <p>Acesse sua conta para continuar.</p>
+      </header>
+
+      <form class="auth-form" action="#" method="post">
+        <div class="form__group">
+          <label class="form__label" for="email">E-mail</label>
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            placeholder="seuemail@exemplo.com"
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="password">Senha</label>
+          <input
+            class="form__input"
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+            placeholder="********"
+          />
+        </div>
+
+        <button class="btn btn-primary auth-submit" type="submit">Entrar</button>
+
+        <div class="auth-links">
+          <a href="#" class="auth-link">Esqueci minha senha</a>
+          <a href="register.html" class="auth-link">Criar conta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
