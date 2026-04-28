@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <main class="auth">
+        <section class="auth__container">
+            <h1 class="auth__title">Criar conta</h1>
+            <form class="auth__form" action="#" method="post">
+                <div class="form__group">
+                    <label for="fullName" class="form__label form__label--required">
+                        Nome Completo:
+                    </label>
+                    <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    class="form__input"
+                    required
+                    />
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label form__label--required">
+                        E-mail:
+                    </label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form__input"
+                    required
+                    />
+                </div>
+                <div class="form__group">
+                    <label for="password" class="form__label form__label--required">
+                        Senha:
+                    </label>
+                    <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form__input"
+                    required
+                    />
+                </div>
+                <div class="form__group">
+                    <label for="confirmPassword" class="form__label form__label--required">
+                        Confirmar Senha:
+                    </label>
+                    <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    class="form__input"
+                    required
+                    />
+                </div>
+                <div class="form__group">
+                    <label for="phone" class="form__label">
+                        Telefone:
+                    </label>
+                    <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form__input"
+                    placeholder="(00)00000-0000"
+                    required
+                    />
+                </div>
+                <div class="form__group">
+                    <div class="form__checkbox">
+                        <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                        />
+                        <label for="terms" class="form__checkbox-label">
+                            Li e aceito os termos de uso
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--primary">
+                    Cadastrar
+                </button>
+            </form>
+            <div class="auth__links">
+                <a href="login.html" class="auth__link">Já tenho conta</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

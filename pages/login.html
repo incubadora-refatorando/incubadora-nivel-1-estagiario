@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <main class="auth">
+        <section class="auth__container">
+            <h1 class="auth__title">Entrar</h1>
+            <form class="auth__form">
+                <div class="form__group">
+                  <label for="email" class="form__label form__label--required">
+                    E-mail
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form__input"
+                    required
+                  />
+                </div>
+                <div class="form__group">
+                  <label for="password" class="form__label form__label--required">
+                    Senha
+                  </label>
+                  <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    class="form__input"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn--primary">
+                  Entrar
+                </button>
+              </form>
+            <div class="auth__links">
+                <a href="#" class="auth__link">Esqueci minha senha</a>
+                <a href="../pages/register.html" class="auth__link">Criar conta</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

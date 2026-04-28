@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="../css/reset.css"/>
+  <link rel="stylesheet" href="../css/variables.css"/>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/components/forms.css"/>
+  <link rel="stylesheet" href="../css/contact.css"/>
+</head>
+<body>
+  <main class="contact">
+    <section class="contact__container">
+      <div class="contact__content">
+        <section class="contact__info" aria-labelledby="contact-title">
+          <h1 id="contact-title" class="contact__title">Fale conosco</h1>
+          <p class="contact__description">
+            Entre em contato com a nossa equipe para tirar dúvidas, enviar sugestões
+            ou solicitar mais informações.
+          </p>
+          <div class="contact__details">
+            <p class="contact__item">
+              <strong>Telefone:</strong> (11) 4000-1234
+            </p>
+            <p class="contact__item">
+              <strong>Endereço:</strong> AV commte bittencurt, 110 Centro Nova Friburgo/RJ
+            </p>
+            <p class="contact__item">
+              <strong>Horário de funcionamento:</strong> Segunda a sexta, das 9h às 18h
+            </p>
+          </div>
+          <div class="contact__map">
+            <iframe
+              title="Localização da empresa no Google Maps"
+              src="https://www.google.com/maps?q=São+Paulo&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+        <section class="contact__form-wrapper" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title" class="contact__subtitle">Envie sua mensagem</h2>
+
+          <form class="contact__form" data-validate>
+            <div class="form__group">
+              <label for="name" class="form__label form__label--required">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label form__label--required">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="subject" class="form__label form__label--required">Assunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label form__label--required">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form__textarea"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
