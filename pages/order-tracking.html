@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acompanhe a entrega do seu pedido na TechShop informando o código de rastreio.">
+    <title>Rastrear Pedido | TechShop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos do projeto + estilos desta página -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components/order-tracking.css">
+
+    <script src="../js/order-tracking.js" defer></script>
+</head>
+<body>
+    <main class="tracking container">
+        <section class="tracking__card" aria-labelledby="tracking-title">
+            <h1 id="tracking-title" class="tracking__title">Rastrear Pedido</h1>
+            <p class="tracking__subtitle">Informe o código que você recebeu por e-mail para ver o status da entrega.</p>
+
+            <form id="tracking-form" class="tracking__form" novalidate>
+                <div class="form__group">
+                    <label for="codigo-pedido" class="form__label form__label--required">Código do pedido</label>
+                    <input
+                        type="text"
+                        id="codigo-pedido"
+                        name="codigo-pedido"
+                        class="form__input"
+                        placeholder="Ex: BR123456789"
+                        autocomplete="off"
+                        aria-describedby="codigo-erro"
+                        required
+                    >
+                    <p id="codigo-erro" class="form__error" hidden>Digite o código do pedido.</p>
+                </div>
+
+                <button type="submit" class="btn btn-primary tracking__button">Rastrear</button>
+            </form>
+
+            <!-- Começa oculto (display: none no CSS) e aparece ao rastrear -->
+            <section id="resultado" class="tracking__result" aria-live="polite">
+                <h2 class="tracking__result-title">Status do Pedido</h2>
+                <p>Pedido: <strong id="codigo-exibido">#BR123456789</strong></p>
+                <p>Status: <span class="tracking__status">Em transporte</span></p>
+                <p>Previsão de entrega: <strong>25/05/2026</strong></p>
+
+                <p class="tracking__support">
+                    <!-- Troque o # pelo link real do suporte quando existir -->
+                    <a href="#">Problemas com seu pedido? Fale com o suporte</a>
+                </p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

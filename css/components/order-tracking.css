@@ -1,0 +1,103 @@
+/* ========================================
+   ORDER TRACKING - Página de rastreio
+   Usa as variáveis de css/variables.css
+   ======================================== */
+
+body {
+	background: var(--gray-100);
+}
+
+.tracking {
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.tracking__card {
+	width: 100%;
+	max-width: 520px;
+	padding: 2rem;
+	background: white;
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-lg);
+}
+
+.tracking__title {
+	margin-bottom: 0.5rem;
+	font-size: 1.75rem;
+	text-align: center;
+	color: var(--gray-900);
+}
+
+.tracking__subtitle {
+	margin-bottom: 1.5rem;
+	text-align: center;
+	color: var(--gray-500);
+}
+
+.tracking__button {
+	width: 100%;
+}
+
+/* Começa oculto, como pede a issue */
+.tracking__result {
+	display: none;
+	margin-top: 1.5rem;
+	padding: 1.25rem;
+	border: 1px solid var(--gray-200);
+	border-radius: var(--radius);
+	background: var(--gray-50);
+}
+
+.tracking__result.is-visible {
+	display: block;
+}
+
+.tracking__result-title {
+	margin-bottom: 0.75rem;
+	font-size: 1.125rem;
+}
+
+.tracking__result p + p {
+	margin-top: 0.5rem;
+}
+
+.tracking__status {
+	font-weight: 600;
+	color: var(--success);
+}
+
+.tracking__support {
+	margin-top: 1rem !important;
+	text-align: center;
+}
+
+.tracking__support a {
+	color: var(--secondary);
+	text-decoration: none;
+}
+
+.tracking__support a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+	.tracking {
+		padding-top: 1.5rem;
+	}
+
+	.tracking__card {
+		padding: 1.25rem;
+	}
+
+	.tracking__title {
+		font-size: 1.375rem;
+	}
+}
+
+/* Garante que o atributo hidden esconda a mensagem de erro
+   (o .form__error tem display: flex, que venceria o hidden) */
+.form__error[hidden] {
+	display: none;
+}
